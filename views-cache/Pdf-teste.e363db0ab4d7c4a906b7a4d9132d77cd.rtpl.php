@@ -1,1 +1,0 @@
-<?php if(!class_exists('Rain\Tpl')){exit;}?>Array04 de junho de 2020Array
