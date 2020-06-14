@@ -1,0 +1,1 @@
+<?php if(!class_exists('Rain\Tpl')){exit;}?><li><a href="/index.php/orc/categories/47/products">aaa</a></li>

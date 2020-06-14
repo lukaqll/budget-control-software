@@ -1,0 +1,7 @@
+host 64.37.59.74
+
+dbname imprimaisdigital_db_orc
+
+user imprimaisdigital_user
+
+pass jbO1x[hq8Jma
