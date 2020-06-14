@@ -18,12 +18,13 @@ USE `db_orcamento`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Dumping data for table `tb_cartsproducts`
+-- Dumping data for table `tb_arquives`
 --
 
-LOCK TABLES `tb_cartsproducts` WRITE;
-/*!40000 ALTER TABLE `tb_cartsproducts` DISABLE KEYS */;
-/*!40000 ALTER TABLE `tb_cartsproducts` ENABLE KEYS */;
+LOCK TABLES `tb_arquives` WRITE;
+/*!40000 ALTER TABLE `tb_arquives` DISABLE KEYS */;
+INSERT INTO `tb_arquives` VALUES (13,NULL,'Nota - .pdf','2020-06-04 18:09:04'),(61,'J2693','views/orc/arquivos/canecas3.cdr','2020-06-09 19:33:33'),(62,'J2693','views/orc/arquivos/caneca namorados.cdr','2020-06-10 13:35:38'),(63,'N3493','views/orc/arquivos/img_20200102_000155_443.jpg','2020-06-10 14:11:04'),(69,'L3395','views/orc/arquivos/gesso sf.cdr','2020-06-12 14:06:49');
+/*!40000 ALTER TABLE `tb_arquives` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -32,7 +33,6 @@ UNLOCK TABLES;
 
 LOCK TABLES `tb_categories` WRITE;
 /*!40000 ALTER TABLE `tb_categories` DISABLE KEYS */;
-INSERT INTO `tb_categories` VALUES (41,'Com Nota','2020-04-27 00:04:05');
 /*!40000 ALTER TABLE `tb_categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `tb_itens` WRITE;
 /*!40000 ALTER TABLE `tb_itens` DISABLE KEYS */;
-INSERT INTO `tb_itens` VALUES (1,1,'codigo','item cod','',''),(2,1,'','item ok','',''),(3,1,'1212','item ok','',''),(7,1,NULL,'pedido do 111','',''),(8,1,'1688','pedido do 111','',''),(9,1,'4128','item 1','',''),(11,1,'L7783','pedido do L7783','',''),(12,1,'A3537','item a3537','',''),(14,1,NULL,'','',''),(15,1,NULL,'','',''),(16,1,NULL,'','',''),(17,1,'A6015','','',''),(18,1,'J1295','','',''),(19,1,'K8160','','',''),(20,1,NULL,'','',''),(21,1,NULL,'','',''),(22,2,NULL,'','',''),(23,2,NULL,'','',''),(24,2,NULL,'','',''),(25,2,NULL,'','',''),(26,1,'C6378','','',''),(27,2,'','','',''),(28,1,'B4936','','',''),(32,1,'B4360','item 1','qtd ok','valor ok'),(38,1,'B3536','pedido do 111','',''),(44,2,'B4360','kjasdlf lakjsdfl  jaksdfkjagsj lkjlakjsgdl kjagfjgaldshsj ','',''),(45,3,'B4360','xfgigh usigiohps oshdgi sdg hs h~sj~gdh j~lh k iid g dpg p dgph  ipi idgi i ','qtd ok','20.000,00'),(56,1,'C4610','item ok','',''),(57,1,'A2400','','',''),(58,1,'A3250','','',''),(59,1,'G1950','','',''),(64,2,'A3250','','',''),(65,1,'L8026','','','');
+INSERT INTO `tb_itens` VALUES (22,1,'J8140','camisas brancas P baby frente','4','20'),(23,2,'J8140','camisa branca frente e verso','1','22'),(31,1,'J2693','canecas','3',''),(32,2,'J2693','adesivo 25 x 15','1','0'),(33,1,'N3493','almofada','1','35'),(36,1,'L3395','1000 cartões','1','100');
 /*!40000 ALTER TABLE `tb_itens` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,7 +61,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `tb_persons` WRITE;
 /*!40000 ALTER TABLE `tb_persons` DISABLE KEYS */;
-INSERT INTO `tb_persons` VALUES (8,'','',0,'2020-04-22 02:09:10'),(12,'','',0,'2020-04-22 20:35:01'),(14,'admin','',0,'2020-04-23 20:03:00'),(19,'Beto','lukaquinellato@gmail.com',0,'2020-04-30 18:32:02');
+INSERT INTO `tb_persons` VALUES (8,'','',0,'2020-04-22 02:09:10'),(12,'','',0,'2020-04-22 20:35:01'),(14,'admin','',0,'2020-04-23 20:03:00');
 /*!40000 ALTER TABLE `tb_persons` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -71,7 +71,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `tb_products` WRITE;
 /*!40000 ALTER TABLE `tb_products` DISABLE KEYS */;
-INSERT INTO `tb_products` VALUES (175,'','','','','','','',0.00,'','16/05/2020, 02:19','','(5)Não Iniciado','(3)Baixa','A2400'),(176,'','','','','','','',0.00,'','16/05/2020, 08:09','','(5)Não Iniciado','(3)Baixa','A3250'),(177,'','','','','','','',0.00,'','16/05/2020, 02:21','','(5)Não Iniciado','(3)Baixa','G1950'),(178,'','teste','','','','','',0.00,'','16/05/2020, 08:09','','(5)Não Iniciado','(2)Média','G7847'),(179,'','teste editado','','','','','',0.00,'','16/05/2020, 07:45','','(5)Não Iniciado','(3)Baixa','L8026');
+INSERT INTO `tb_products` VALUES (10,'0','casa amor cristão','','(33) 98447-3480','2020-06-04','','',0.00,'','2020-06-05 19:40:53','','(3)Em Andamento','(3)Baixa','F9972','(1)Pendente'),(16,'0','gustavo colégio','','33 99903-1659','','','',102.00,'','2020-06-06 04:07:41','','(3)Em Andamento','(3)Baixa','J8140','(1)Pendente'),(18,'0','canecas3','','','','','',0.00,'','2020-06-10 13:35:37','','(4)Aguardando Aprovação','(3)Baixa','J2693','(1)Pendente'),(19,'20,00','Pâmela','','33 99830-1978','','','data: 16/11/2017',35.00,'','2020-06-11 23:03:06','','(3)Em Andamento','(3)Baixa','N3493','(3)Pago'),(22,'50','gesso s.f','','28 99917-6361','','','',100.00,'','2020-06-12 14:10:32','','(4)Aguardando Aprovação','(3)Baixa','L3395','(2)Entrada');
 /*!40000 ALTER TABLE `tb_products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -81,7 +81,6 @@ UNLOCK TABLES;
 
 LOCK TABLES `tb_productscategories` WRITE;
 /*!40000 ALTER TABLE `tb_productscategories` DISABLE KEYS */;
-INSERT INTO `tb_productscategories` VALUES (24,24),(26,10);
 /*!40000 ALTER TABLE `tb_productscategories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -91,7 +90,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `tb_users` WRITE;
 /*!40000 ALTER TABLE `tb_users` DISABLE KEYS */;
-INSERT INTO `tb_users` VALUES (14,14,'admin','$2y$12$JzJbE1QffCXUV0lYXgF4TuPgJu6KkfVJMwQChh67UcOyGjUfi7Z7.',1,'2020-04-23 20:03:00'),(19,19,'beto','$2y$12$/HO9AlQS.jfSd2h1fJObFOFVbNmpkJERsfbZlxFPcbTLzwmkK.xG2',1,'2020-04-30 18:32:02');
+INSERT INTO `tb_users` VALUES (14,14,'admin','$2y$12$JzJbE1QffCXUV0lYXgF4TuPgJu6KkfVJMwQChh67UcOyGjUfi7Z7.',1,'2020-04-23 20:03:00');
 /*!40000 ALTER TABLE `tb_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,7 +109,6 @@ UNLOCK TABLES;
 
 LOCK TABLES `tb_userspasswordsrecoveries` WRITE;
 /*!40000 ALTER TABLE `tb_userspasswordsrecoveries` DISABLE KEYS */;
-INSERT INTO `tb_userspasswordsrecoveries` VALUES (1,8,'127.0.0.1',NULL,'2020-04-22 19:58:09'),(2,8,'127.0.0.1',NULL,'2020-04-22 19:59:08'),(3,8,'127.0.0.1',NULL,'2020-04-22 20:31:50'),(4,12,'127.0.0.1',NULL,'2020-04-22 20:35:31'),(5,12,'127.0.0.1',NULL,'2020-04-22 20:42:57');
 /*!40000 ALTER TABLE `tb_userspasswordsrecoveries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -225,7 +223,7 @@ pvlprice varchar(64),
 pvlwidth varchar(30),
 pvlheight varchar(30),
 pvllength varchar(10),
-pvlweight varchar(10),
+pvlweight varchar(45),
 pdesction varchar(200),
 pprice decimal(30,2),
 pdesurl varchar(128),
@@ -233,7 +231,8 @@ pnota varchar(20),
 pstats varchar(45),
 pprioridade varchar(20),
 pdtregister varchar(20),
-pcod varchar(45)
+pcod varchar(45),
+ppago varchar (15)
 
 )
 BEGIN
@@ -255,14 +254,15 @@ BEGIN
             stats = pstats,
             prioridade = pprioridade,
             dtregister= pdtregister,
-            cod = pcod
+            cod = pcod,
+            pago = ppago
 
         WHERE idproduct = pidproduct;
         
     ELSE
 		
-		INSERT INTO tb_products (desproduct, vlprice, vlwidth, vlheight, vllength, vlweight, desction, price, desurl, nota, stats, prioridade, dtregister, cod) 
-        VALUES(pdesproduct, pvlprice, pvlwidth, pvlheight, pvllength, pvlweight, pdesction, pprice, pdesurl, pnota, pstats, pprioridade, pdtregister, pcod);
+		INSERT INTO tb_products (desproduct, vlprice, vlwidth, vlheight, vllength, vlweight, desction, price, desurl, nota, stats, prioridade, dtregister, cod, pago) 
+        VALUES(pdesproduct, pvlprice, pvlwidth, pvlheight, pvllength, pvlweight, pdesction, pprice, pdesurl, pnota, pstats, pprioridade, pdtregister, pcod, ppago);
         
         SET pidproduct = LAST_INSERT_ID();
         
@@ -431,4 +431,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-16 14:52:54
+-- Dump completed on 2020-06-14 19:54:27
